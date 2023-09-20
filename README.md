@@ -32,5 +32,22 @@ if 48<= ord(caracter)<=57:                 #Los códigos ASCII del 48 al 57 pert
 else:                                      #De lo contrario:
   print("Usted no ha ingresado un dígito")
 ```
+Dado un número real x, construya un programa que permita determinar si el número es positivo, negativo o cero. Para cada caso de debe imprimir el texto que se especifica a continuación:
+
+-Positivo: "El número x es positivo"
+-Negativo: "El número x es negativo" 
+-Cero (0): "El número x es el neutro para la suma"
+
+```
+x : float
+x = float(input("Ingrese un número cualquiera: "))
+if x > 0:
+  print("el número " + str(x) + " es positivo")
+elif x == 0:
+  print("el número " + str(x) + " es neutro para la suma")
+else:
+  print("el número " + str(x) + " es negativo")
+```
+     
      
 
