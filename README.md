@@ -48,6 +48,25 @@ elif x == 0:
 else:
   print("el número " + str(x) + " es negativo")
 ```
-     
+Dado el centro y el radio de un círculo, determinar si un punto de R2 pertenece o no al interior del círculo.
+
+```
+centro_x: float
+centro_y: float
+radio: float
+coordenada_x : float
+coordenada_y : float
+
+centro_x = float(input("Ingrese un número para la coordenada x del centro del círculo: "))
+centro_y = float(input("Ingrese un número para la coordenada y del centro del círculo: "))
+radio = float(input("Ingrese un número positivo para el radio del círculo: "))
+coordenada_x = float(input("Ingrese un número para una coordenada x cualquiera: "))
+coordenada_y = float(input("Ingrese un número para una coordenada y cualquiera: "))
+
+if ((coordenada_x - centro_x)**2 + (coordenada_y - centro_y)**2)**0.5 < radio:  #Si la distancia entre el centro y el punto es menor que el radio, entonces:
+                     print("El punto está dentro del círculo")
+else:                                                                           #Si no:
+                     print("El punto no está dentro del círculo")
+```     
      
 
