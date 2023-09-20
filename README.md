@@ -1,6 +1,6 @@
 # reto_4
 
-Dado un número entero, determinar si ese número corresponde al código ASCII de una vocal minúscula.
+*- 1. Dado un número entero, determinar si ese número corresponde al código ASCII de una vocal minúscula.*
 ```
 numero_entero: int
 numeros_vocales = [97, 101, 105, 111, 117]  #Lista de números que corresponden al código ASCII de vocales minúsculas
@@ -11,7 +11,7 @@ if a in numeros_vocales:                    #Si "a" corresponde a cualquiera de 
 else:                                       #Si no:
   print("El número " + str(a) + " no equivale a una vocal minúscula en código ASCII")
 ```
-Dada una cadena de longitud 1, determine si el código ASCII de primera letra de la cadena es par o no.
+*- 2. Dada una cadena de longitud 1, determine si el código ASCII de primera letra de la cadena es par o no.*
 
 ```letra: str
 letra = str(input("ingrese una letra cualquiera(solo 1 caracter): "))
@@ -22,7 +22,7 @@ else:                    #Si no:
   print(letra + " pertenece a un código ASCII impar")
 ```
      
-Dado un carácter, construya un programa en Python para determinar si el carácter es un dígito o no.
+*- 3. Dado un carácter, construya un programa en Python para determinar si el carácter es un dígito o no.*
 
 ```
 caracter: str
@@ -32,11 +32,13 @@ if 48<= ord(caracter)<=57:                 #Los códigos ASCII del 48 al 57 pert
 else:                                      #De lo contrario:
   print("Usted no ha ingresado un dígito")
 ```
-Dado un número real x, construya un programa que permita determinar si el número es positivo, negativo o cero. Para cada caso de debe imprimir el texto que se especifica a continuación:
+*- 4. Dado un número real x, construya un programa que permita determinar si el número es positivo, negativo o cero. Para cada caso de debe imprimir el texto que se especifica a continuación*:
 
--Positivo: "El número x es positivo"
--Negativo: "El número x es negativo" 
--Cero (0): "El número x es el neutro para la suma"
+-**Positivo**: *"El número x es positivo"*
+
+-**Negativo**: *"El número x es negativo"*
+
+-**Cero (0)**: *"El número x es el neutro para la suma"*
 
 ```
 x : float
@@ -48,7 +50,7 @@ elif x == 0:
 else:
   print("el número " + str(x) + " es negativo")
 ```
-Dado el centro y el radio de un círculo, determinar si un punto de R2 pertenece o no al interior del círculo.
+*- 5. Dado el centro y el radio de un círculo, determinar si un punto de R2 pertenece o no al interior del círculo.*
 
 ```
 centro_x: float
@@ -67,6 +69,23 @@ if ((coordenada_x - centro_x)**2 + (coordenada_y - centro_y)**2)**0.5 < radio:  
                      print("El punto está dentro del círculo")
 else:                                                                           #Si no:
                      print("El punto no está dentro del círculo")
-```     
+```
+*- 6. Dadas tres longitudes positivas, determinar si con esas longitudes se puede construir un triángulo.*
+
+```
+a: float
+b: float
+c: float
+
+a = float(input("ingrese una longitud(número positivo): "))
+b = float(input("ingrese otra longitud(número positivo): " ))
+c = float(input("ingrese una tercera longitud(número positivo): "))
+
+if a + b > c and a + c > b and b + c > a :  #Si se cumple que la suma de dos longitudes es mayor que la tercera longitud, entonces:
+  print("Se puede formar un triángulo")
+else:                                       #Si no:
+  print("No se puede formar un triángulo")
+```
+
      
 
